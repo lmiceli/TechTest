@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.lmiceli.techtest.mosbylce.CountriesFragment"
+    >
+
+  <android.support.v4.widget.SwipeRefreshLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/contentView"
+      >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+  </android.support.v4.widget.SwipeRefreshLayout>
+
+  <TextView
+      android:id="@+id/loadingView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="CARGANDO ...."
+      android:gravity="center"
+      />
+
+  <!--por alguna razon se ven las dos mientras carga-->
+
+  <TextView
+      android:id="@+id/errorView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="bottom"
+      android:text="FUCK!"
+      />
+
+</FrameLayout>
